@@ -1,0 +1,27 @@
+[
+    {
+        "eid": 101,
+        "ename": "Alice Johnson",
+        "gender": "Female"
+    },
+    {
+        "eid": 102,
+        "ename": "Bob Smith",
+        "gender": "Male"
+    },
+    {
+        "eid": 103,
+        "ename": "Charlie Lee",
+        "gender": "Male"
+    },
+    {
+        "eid": 104,
+        "ename": "Diana Patel",
+        "gender": "Female"
+    },
+    {
+        "eid": 105,
+        "ename": "Ethan Brown",
+        "gender": "Male"
+    }
+]
