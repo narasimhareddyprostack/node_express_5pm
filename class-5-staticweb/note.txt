@@ -1,0 +1,6 @@
+npm init -y
+npm i -g nodemon
+update package.json file - add property
+"type":"module"
+
+nodemon app.js
