@@ -1,0 +1,41 @@
+               Create | Read | update | Delete 
+HTTP Method     POST    GET     POST     DELETE  
+
+API Information
+App Root Request:
+------------------------------
+usage : app root 
+API URL: http://127.0.0.1:8080/
+Method Type:GET
+
+Create 
+---------
+usage : create new user 
+API URL: http://127.0.0.1:8080/user/create
+Method Type:POST 
+Required Fields:name,email,mobile
+Access Type:Public
+
+Read 
+---------
+usage : fetct users/user  
+API URL: http://127.0.0.1:8080/user/read
+Method Type:GET 
+Required Fields:None
+Access Type:Public
+
+Update
+---------
+usage : update user
+API URL: http://127.0.0.1:8080/user/update
+Method Type:PUT
+Required Fields:name,email,mobile
+Access Type:Public
+
+DELETE
+---------
+usage : delete user 
+API URL: http://127.0.0.1:8080/user/delete
+Method Type:DELETE 
+Required Fields:None
+Access Type:Public
