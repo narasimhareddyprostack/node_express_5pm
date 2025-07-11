@@ -59,7 +59,7 @@ router.put("/update/:eid",async(req,resp)=>{
     let employee =req.body;
     let employees=await getEmployees();
     let emp = employees.find((emp)=>{
-        return emp.eid === employee.eid;
+        return emp.eid === parseInt(eid);
     })
     console.log("Tst case 123")
     console.log(emp)
@@ -72,7 +72,30 @@ router.put("/update/:eid",async(req,resp)=>{
     return resp.json({"msg":"Employee Object Updated"})
 })
 
+/*
+usage  : delete employee based on eid
+API URL: http://127.0.0.1:8080/emp/delete/101
+Method Type:delete
+Required Field:None
+Access Type:Public
+*/
+router.delete("/delete/:empId",async(req,resp)=>{
+    let eId=req.params.empId;
+    console.log(typeof eId)
+    let employees=await getEmployees();
+    console.log(employees)
+    let emp = employees.find((employee)=>{
+        return employee.eid ===parseInt(eId);
+    })
+    console.log(emp) 
+    if(!emp){
+        return resp.json({"msg":"Employee Not Exits"})
+    }
 
+    let remaining_Employees = employees.filter(emp=>emp.eid !==parseInt(eId))
+    createEmployees(remaining_Employees)
+    return resp.json({"msg":"Employee Deleted"})
+})
 
 let getEmployees=()=>{
     //console.log("Test Case 12")
