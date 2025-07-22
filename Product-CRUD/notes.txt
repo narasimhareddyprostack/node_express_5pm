@@ -7,6 +7,22 @@ How to run client?react client?
 >npm start
 
 server/nodejs express,mongodb
-----------------------------
+-----------------------------
+npm init -y
+update package.json - to enable JS ES6?
+and update to script property 
+npm i express morgan chalk cors dotenv nodemon mongoose
+
+create express app, and connect mongodb.
+
+create application root:
+
+
+morgan  - http logger middleware
+chalk   - termian styling
+mogoose - schema based Model
+dotenv  - load env variable
+
+
 
 
